@@ -1,0 +1,75 @@
+/* 공통 */
+
+.blind{
+  position: absolute;
+  width:1px; height:1px;
+  overflow: hidden;
+  margin:-1px;
+  clip:rect(0,0,0,0)
+}
+
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  overflow: hidden;
+}
+ 
+.scroll_hidden{
+  overflow: hidden;
+}
+
+.btn{
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  border-left: 1px solid #00adef;
+  border-right: 1px solid #00adef;
+  transition: all .2s ease-in-out;
+  padding:14px 35px;
+  overflow: hidden;
+}
+
+
+.btn span{
+  font-size: 13px;
+  color: #6f7070;
+  letter-spacing: 4px;
+}
+.btn::before,
+.btn::after{
+  position: absolute;
+  content: " ";
+  border-top: 1px solid #00adef;
+  border-bottom: 1px solid #00adef;
+  width: 10px;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  transition: width .2s ease-in-out .15s;
+}
+.btn::before{
+  left: 0;
+}
+.btn::after{
+  right: 0;
+}
+
+.btn:hover{
+  display: inline-block;
+  padding:14px 35px;
+  background:#00adef;
+  transition: .3s ease .4s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0.4s;
+  cursor: pointer;
+  
+}
+.btn span:hover{
+  color:#fff;
+  transition: .3s ease .4s;
+  /* transition-duration: 0.3s; */
+  /* transition-timing-function: ease; */
+  /* transition-delay: 0.4s; */
+}
